@@ -29,6 +29,7 @@ node {
 	    sh "> spinnaker.properties"
 	    sh "echo 'JOB_NAME=${JOB_NAME}' >> spinnaker.properties"
 	    sh "echo 'BUILD_ID=${BUILD_ID}' >> spinnaker.properties"
+		echo ""
 	    archiveArtifacts artifacts: 'spinnaker.properties', fingerprint: true
 	}
 	stage('Push to ECR') {
@@ -37,3 +38,4 @@ node {
 	   }
 	}
 }
+
