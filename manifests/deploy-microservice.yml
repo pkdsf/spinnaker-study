@@ -57,7 +57,7 @@ spec:
     rules:
         -   http:
                 paths:
-                    -   path: /mild-temper(/|$)(.*)
+                    -   path: /ancient-craftsman(/|$)(.*)
                         backend:
                             serviceName: ancient-craftsman-microservice-service
                             servicePort: 30201
